@@ -1,0 +1,43 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["你好", "Hello", "Hi", "机器人", "再见"],
+         "responses": ["你好, 欢迎光临", "很高兴，见到你", "你好，有什么可以帮你的吗"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["再见", "待会见", "拜拜"],
+         "responses": ["再见，欢迎下次光临", "待会见", "拜拜，欢迎下次再来"]
+        },
+        {"tag": "thanks",
+         "patterns": ["谢谢", "谢谢你", "太谢谢你了"],
+         "responses": ["不客气", "太客气了", "荣幸之至"]
+        },
+        {"tag": "hours",
+         "patterns": ["你们每天几点开门啊", "你们营业时间是是几点", "啥时候开门" ],
+         "responses": ["我们营业时间是每天早9点到晚上9点", "我们早上9点开门，晚上9点关门"]
+        },
+        {"tag": "mopeds",
+         "patterns": ["你们有什么助力车", "有什么样的助力车", "你们出租什么" ],
+         "responses": ["我们出租雅马哈，比亚乔和维斯帕摩托车", "我们有雅马哈，比亚乔和维斯帕摩托车"]
+        },
+        {"tag": "payments",
+         "patterns": ["你们刷信用卡吗", "你们收万事达卡吗", "只能现金支付？" ],
+         "responses": ["我们支持信用卡，万事达，银联", "刷卡，现金，支付宝，微信都可以"]
+        },
+        {"tag": "opentoday",
+         "patterns": ["什么时候开门", "你们几点开门", "你们营业时间是什么时候"],
+         "responses": ["我们营业时间是每天早9点到晚上9点", "我们营业时间是每天早9点到晚上9点"]
+        },
+        {"tag": "rental",
+         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
+         "responses": ["Are you looking to rent today or later this week?"],
+         "context_set": "rentalday"
+        },
+        {"tag": "today",
+         "patterns": ["today"],
+         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
+         "context_filter": "rentalday"
+        }
+   ]
+}
+
