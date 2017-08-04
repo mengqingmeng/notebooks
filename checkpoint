@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/mqm/Workspace/dl/notebooks/model.tflearn"
+all_model_checkpoint_paths: "/home/mqm/Workspace/dl/notebooks/model.tflearn"
